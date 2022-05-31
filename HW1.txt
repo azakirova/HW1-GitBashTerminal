@@ -1,23 +1,43 @@
 1. pwd - где находишься
+
 2. mkdir QA - создание новой папки
+
 3. cd QA - зайти в папку QA
+
 4. mkdir test1 test2 test3 - создать 3 папки
+
 5. cd test1 - зайти в любую папку
+
 6. touch file1.txt file2.txt file3.txt file4.json file5.json - создать 5 файлов
+
 7. mkdir folder4 folder5 folder6 - создать 3 папки
+
 8. ls -la - просмотр информации о папке
+
 9. cat >> file1.txt - открыть файл file1.txt
+
 редактирование файла
+
 10. ctr + C - сохранить и выйти
+
 11. cd .. - выйти на уровень назад
+
 12. mv file1.txt file2.txt folder2 - переместить файл file1.txt и file2.txt из папки test1 в папку folder2
+
 13. cp file1.txt file2.txt folder3 - скопировать файл file1.txt и file2.txt из папки test1 в папку folder3
+
 14. find . -name file1.txt - поиск файла с именем file1.txt относительно pwd 
+
 15. tail -f file2.txt | grep "search" - отображение изменений конкретного термина в файле в режиме реального времени
+
 16. head -3 file2.txt - вывод первых 3 строк файла test2.txt
+
 17. tail -3 file2.txt - вывод последних 3 строк файла test2.txt
+
 18. tail -f file2.txt - вывод всего содержимого в режиме реального времени
+
 19. less file2.txt - просмотр содержимого большого файла
+
 20. date -R - вывод даты и времени
 
 curl http://162.55.220.72:5005/terminal-hw-request - get запрос на сервер
