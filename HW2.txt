@@ -41,15 +41,15 @@ $ cat >> tf_3.txt
 the sec 2
 
  11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3”
-$ cat >> tf_2.txt
-the sec 3
+$ cat >> ../tf_2.txt
+sec 3
 
  12. Через cat добавить в текстовый файл tf_3.txt строку “the SeCoNd 2”
 $ cat >> inner_dir_1/tf_3.txt
 the SeCoNd 2
 
  13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2”
-$ cat >> tf_2.txt
+$ cat >> ../tf_2.txt
 the seConD 2
 
  14. Сделать текстовый файл tf_4.txt в котором будет 15 строк.
@@ -100,7 +100,7 @@ drwxr-xr-x 1 Maxim 197121  0 May 30 14:54 ../
 $ cd ..
 
  18. Вывести содержимое файла tf_3.txt в терминал.
-$ tail -f inner_dir_1/tf_3.txt
+$ cat ../inner_dir_1/tf_3.txt
 qwerty
 asdfgh
 zxcvbn
@@ -112,11 +112,11 @@ the SeCoNd 2
 $ find . -name tf_4.txt
 ./inner_dir_1/tf_4.txt
 
- 20. Отчистить файл tf_4.txt от содержимого без удаления самого файла.
+ 20. Очистить файл tf_4.txt от содержимого без удаления самого файла.
 $ echo -n > inner_dir_1/tf_4.txt
 
  21. Найти путь к файлам у которых есть  “tf” в названии.
-$ find . -name 'tf*'
+$ find . ! -type d -name 'tf*'
 ./inner_dir_1/tf_2.txt
 ./inner_dir_1/tf_3.txt
 ./inner_dir_1/tf_4.txt
@@ -125,7 +125,8 @@ $ find . -name 'tf*'
 ./tf_2.txt
 
  22. Найти путь к файлам у которых есть  “tf” в названии и буквы в любом регистре.
-$ find . -iname 'tf*'
+$ find . ! -type d -iname 'tf*'
+
 ./inner_dir_1/tf_2.txt
 ./inner_dir_1/tf_3.txt
 ./inner_dir_1/tf_4.txt
@@ -162,9 +163,8 @@ grep: inner_dir_1: Is a directory
 tf_2.txt:- the second 2
 
  29. Найти строки в файлах где есть комбинация букв “second” во всех папках ниже уровнем
-$ grep -r second 
-./dir_1/inner_dir_1/tf_3.txt:the second 2
-./dir_1/tf_2.txt:- the second 2
+$ grep -r second */
+inner_dir_1/tf_3.txt:the second 2
 
  30. Найти только путь и название файла в строках которых есть комбинация букв “second” в текущей папке
 $ grep -l second *
@@ -178,10 +178,11 @@ tf_2.txt:- the first 1
 tf_2.txt:- the third 3
 
  32. Найти только название и путь к файлам где нет комбинации “second”
-$ grep -L second *
-grep: inner_dir_1: Is a directory
-inner_dir_1
+$ grep -L -r second *
+inner_dir_1/tf_4.txt
+inner_dir_1/tf_5.txt
 tf_1.txt
+tf_2.txt
 
  33. Вывести в терминал 4 последних строк любого текстового файла
 $ tail -4 inner_dir_1/tf_3.txt
@@ -198,7 +199,7 @@ zxcvbn
 the second 2
 
  35. Команда в одну строку. Создать папку и создать текстовый файл с содержиммым.
-$ mkdir dir_2 | touch test.txt | echo "Test sec" >> test.txt
+$ mkdir dir_2 | echo "Test sec" >> test.txt
 
  36. Команда в одну строку. Переместить в любую одну папку текстовые файлы у которых в содержимом есть слово “sec”
 $ grep -l sec * | xargs mv -t dir_2
@@ -217,5 +218,6 @@ grep: dir_2: Is a directory
 grep: inner_dir_1: Is a directory
 
  40. Просто вывести в терминал строку “Good job!!”
-$ echo Good job!
-Good job!
+$ echo 'Good job!''!'
+Good job!!
+
