@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<skills>
+    <Git_Bash>interaction with github</Git_Bash>
+    <Postman>testing API</Postman>
+    <Charles_and_Fiddler>Get logs</Charles_and_Fiddler>
+    <Mobile_testing>iOS, Android, guideline, ADB, application assembly</Mobile_testing>
+    <SQL>SQL Basics, Postgres database</SQL>
+    <Jmeter>stress testing</Jmeter>
+</skills>
