@@ -1,0 +1,13 @@
+{
+  "Information about me": [ 
+	
+	    {
+        "lastname":"Zakirova", 
+        "name": "Anastasia", 
+        "patronimyc": "Andreevna",
+        "age": "28",
+        "pets": "Dog boxer",
+        "desired salary": "100 000 rub"
+     } 
+  ]   
+}
