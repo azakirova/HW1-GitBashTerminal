@@ -1,1 +1,18 @@
-
+{
+  "bug report": [ 
+	
+	    {
+        "id":"001",
+        "priority": "High/Medium/Low",
+        "severity": "Blocker/Critical/ Major/Minor",
+        "build number": "1.11.1",
+        "assignee": "Vadim",
+        "summary": "something summary", 
+        "preconditions": "conditions before steps",
+        "steps to reproduce": "steps bug",
+        "actual rersult": "what we got after following the steps",
+        "expected result": "what should we get after following the steps",
+        "additions": "something screenshots/logs"
+        } 
+    ]   
+}
