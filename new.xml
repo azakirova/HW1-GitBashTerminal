@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Information_about_me>
+    <lastname>Zakirova</lastname>
+    <name>Anastasia</name>
+    <patronimyc>Andreevna</patronimyc>
+    <age>28</age>
+    <pets>Dog boxer</pets>
+    <desired_salary>100 000 rub</desired_salary>
+</Information_about_me>
