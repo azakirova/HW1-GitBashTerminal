@@ -1,0 +1,14 @@
+{
+  "skills": [ 
+	
+	    {
+        "Git Bash":"learning the terminal command", 
+        "Git Bash": "interaction with github", 
+        "Postman": "testing API",
+        "Charles and Fiddler": "Get logs",
+        "Mobile testing": "iOS, Android, guideline, ADB, application assembly",
+        "SQL": "SQL Basics, Postgres database",
+        "Jmeter": "stress testing"
+        } 
+  ]   
+}

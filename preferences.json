@@ -1,0 +1,12 @@
+{
+  "preferences": [ 
+	
+	    {
+        "favorite film":"Pride and Prejudice", 
+        "favorite serial": "Game of thrones", 
+        "favorite food": "Steak",
+        "favorite season": "Summer",
+        "favorite country": "Spain"
+        } 
+  ]   
+}
