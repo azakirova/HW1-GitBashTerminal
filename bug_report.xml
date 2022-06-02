@@ -1,1 +1,14 @@
-
+<?xml version="1.0" encoding="UTF-8" ?>
+<bug_report>
+    <id>001</id>
+    <priority>High/Medium/Low</priority>
+    <severity>Blocker/Critical/ Major/Minor</severity>
+    <build_number>1.11.1</build_number>
+    <assignee>Vadim</assignee>
+    <summary>something summary</summary>
+    <preconditions>conditions before steps</preconditions>
+    <steps_to_reproduce>steps bug</steps_to_reproduce>
+    <actual_rersult>what we got after following the steps</actual_rersult>
+    <expected_result>what should we get after following the steps</expected_result>
+    <additions>something screenshots/logs</additions>
+</bug_report>
